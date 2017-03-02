@@ -313,13 +313,9 @@
                         </p>
                     </div>
                     <div class="col col-h-2 grid-h">
-                        <p>​Anh Phạm Huy Hoàng hiện đang theo học Thạc sĩ ngành Computer Science tại Đại học Lancaster, UK.<br/>
-                           Hoàng cũng là chủ blog <a href="https://toidicodedao.com">Tôi Đi Code Dạo </a> khá nổi tiếng tại Việt Nam với hơn 1.5 triệu lượt xem và 17000 lượt follow fanpage.
-                            Anh có hơn 3 năm kinh nghiệm trong lĩnh vực phần mềm và rất đam mê nghiên cứu về bảo mật, công nghệ web, các công nghệ mới. <br/>
-                            Anh từng phát hiện và công bố lỗ hổng bảo mật của Lotte Cinema và Lozi.vn. <br/><br/>
-
-                            Hiện anh đang là Full-stack Developer
-                            tại Lancaster ISS.</p>
+                        <p>​Anh Phạm Huy Hoàng hiện đang theo học Thạc sĩ ngành Computer Science tại Đại học Lancaster, UK.<br/> Hoàng cũng là chủ blog <a href="https://toidicodedao.com">Tôi Đi Code Dạo </a> khá nổi tiếng tại Việt Nam với hơn 1.5 triệu lượt
+                            xem và 17000 lượt follow fanpage. Anh có hơn 3 năm kinh nghiệm trong lĩnh vực phần mềm và rất đam mê nghiên cứu về bảo mật, công nghệ web, các công nghệ mới. <br/> Anh từng phát hiện và công bố lỗ hổng bảo mật của Lotte Cinema
+                            và Lozi.vn. <br/><br/> Hiện anh đang là Full-stack Developer tại Lancaster ISS.</p>
                     </div>
                 </div>
             </article>
@@ -388,6 +384,15 @@
 
         ga('create', 'UA-92896458-1', 'auto');
         ga('send', 'pageview');
+
+        var trackOutboundLink = function(url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'transport': 'beacon',
+                'hitCallback': function() {
+                    document.location = url;
+                }
+            });
+        }
     </script>
 
     <script>
