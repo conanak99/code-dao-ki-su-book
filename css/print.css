@@ -1,0 +1,39 @@
+body{width:100% !important;font-family:arial,Verdana,sans-serif;color:#000;background:none;font-size:8pt;line-height:12pt}
+#menu-main,form,.btn,.box-btn,.box-video,.box-gallery,.box-popup,.box-social{display:none}
+h1,h2,h3,h4,h5,h6{font-weight:bold;line-height:1.2}
+h1{font-size:22pt;margin:0 0 .5cm}
+h2{font-size:18pt;margin:.75cm 0 .2cm}
+h3{font-size:14pt;margin:.5cm 0 .15cm}
+h4,h5,h6{font-size:12pt;margin:1cm 0 .5cm}
+blockquote{padding-left:0;padding-right:0;margin:.5cm 0}
+table{margin:15px 1pt 35px;text-align:left;border-collapse:collapse;width:98% !important;font-size:8pt}
+tr{page-break-inside:avoid}
+th,td{border:1pt solid #000;padding:4px 10px 4px 10px}
+th{font-weight:bold}
+#header{border-bottom:2pt solid #000;padding:0 0 20pt;margin:0 auto 20pt}
+#logo{font-size:40px;line-height:1;margin:0;padding:0;font-weight:bold;text-transform:uppercase;}
+#logo img{border:none}
+#footer{border-top:2pt solid #000;padding:20pt 0 0;margin:20pt 0 0}
+.reset{border:none;margin:0;padding:0;background:none;}
+.reset td,.reset th{border:none;background:none;padding:0}
+.reset > li,.reset > dt,.reset > dd{margin:0;padding:0;background:none;border:none;font-weight:inherit;float:none;display:inherit;text-align:inherit;width:auto}
+fieldset{border:none;padding:0;margin:0}
+p,ul,table{margin:0 0 .4cm}
+a{color:#000;text-decoration:none}
+img{border:none;max-width:100%;height:auto !important}
+img.left,img.right{margin:4px 0 30px 29px;float:right;display:inline;background:#fff}
+img.left{float:left;margin:4px 29px 30px 0}
+.box-annot,.box-content{overflow:hidden;zoom:1;margin:0 0 40px;}
+.box-annot .col-h-1,.box-content .col-h-1{float:left;display:inline;margin-right:20px}
+.box-annot .col-h-2,.box-content .col-h-2{overflow:hidden;zoom:1}
+.crossroad-grid{margin:0 0 40px;}
+.crossroad-grid ul{overflow:hidden;zoom:1}
+.crossroad-grid li{float:left;display:inline;margin:0 10px 0 0}
+.crossroad-grid .inner{display:block;border:1px solid #999;padding:10px 0 10px 10px;}
+.crossroad-grid .inner span{display:inline-block;vertical-align:middle;margin:0 10px 0 0}
+.box-testimonials{margin:0 0 40px;}
+.box-testimonials li{margin:0 0 25px}
+.box-testimonials .head{overflow:hidden;zoom:1;margin:0 0 5px}
+.box-testimonials .avatar{float:left;display:inline;margin-right:20px}
+.box-testimonials .name{display:block}
+.box-testimonials .desc{font-style:italic}
