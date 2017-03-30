@@ -32,3 +32,8 @@
           padding: 2em 1em;
         }
     }
+
+    ol.grey {
+      font-size: 1.1em;
+      font-weight: 700;
+    }
