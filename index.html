@@ -81,7 +81,7 @@
     <div class="box-btn">
       <div class="row-main">
         <p class="r">
-          <a target="_blank" href="https://toidicodedao.files.wordpress.com/2017/01/toi-di-code-dao-ebook-demo.pdf" class="btn">
+          <a id="demo-download" target="_blank" href="https://toidicodedao.files.wordpress.com/2017/01/toi-di-code-dao-ebook-demo.pdf" class="btn">
                         <span>Free demo ebook (PDF)</span>
                     </a>
         </p>
@@ -480,20 +480,73 @@
         'hitCallback': function() {
           document.location = url;
         }
-    </script>
+      })
+    };
+  </script>
 
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 
-	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us13.list-manage.com","uuid":"65d6693da4383efd12df0797e","lid":"e040dff756"}) })</script>
+  <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
+  <script type="text/javascript">
+    require(["mojo/signup-forms/Loader"], function(L) {
+      L.start({
+        "baseUrl": "mc.us13.list-manage.com",
+        "uuid": "65d6693da4383efd12df0797e",
+        "lid": "e040dff756"
+      })
+    })
+  </script>
+
+  <script>
+    ! function(f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function() {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '598240393698367'); // Insert your pixel ID here.
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=598240393698367&ev=PageView&noscript=1"
+/></noscript>
+  <!-- DO NOT MODIFY -->
+  <!-- End Facebook Pixel Code -->
+  <script>
+    fbq('track', 'ViewContent', {
+      value: 'Code Dạo Kí Sự'
+    });
+
+    $('#demo-download').click(() => {
+      fbq('trackCustom', 'Download');
+    });
+
+    $('a.inner').click(() => {
+      fbq('track', 'InitiateCheckout');
+    });
+  </script>
+
 </body>
 
 </html>
